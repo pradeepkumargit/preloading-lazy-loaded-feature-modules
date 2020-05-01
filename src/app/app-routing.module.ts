@@ -9,10 +9,6 @@ const routes: Routes = [
     pathMatch: 'full',
     data: { preload: true }
   },
-  { path: 'arachallenge', 
-    loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule),   
-    data: { preload: true }
-  },
   { 
     path: 'customers', 
     loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule) 
